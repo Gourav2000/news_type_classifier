@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFEB3B"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:id="@+id/header"
+                android:textSize="35dp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="#9C27B0"
+                android:text="News classificaion detector" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/h2"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="enter the info on the article you want to text and get the result"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/header"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/h2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="enter the text here"
+                android:id="@+id/et"
+                android:layout_marginTop="45dp"
+                android:layout_centerHorizontal="true"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFEB3B"
+                android:id="@+id/btn"
+                android:textStyle="bold"
+                android:layout_below="@id/et"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:text="post"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn"
+                android:id="@+id/result"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="75dp"
+                android:layout_centerHorizontal="true"
+                android:text="Wait for the result to appear her...."
+                android:background="#FF9800"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
